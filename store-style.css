@@ -142,6 +142,26 @@ body {
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
 }
 
+/* Keep your existing .p-img-placeholder but add overflow hidden */
+.p-img-placeholder {
+    height: 180px;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #333;
+    overflow: hidden; /* Added to keep images inside corners */
+}
+
+/* Add this new rule for the images inside the placeholder */
+.p-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This crops the image to fill the 180px height without stretching */
+    display: block;
+}
+/*
 .p-img-placeholder {
     height: 180px;
     background: #151515;
@@ -151,7 +171,7 @@ body {
     font-size: 10px;
     color: #333;
 }
-
+*/
 .p-info { padding: 25px; }
 .p-info h3 { font-family: 'Oxanium'; font-size: 18px; margin-bottom: 10px; }
 .p-price { color: var(--cyber-blue); font-weight: bold; font-size: 1.1rem; margin-bottom: 20px; }
@@ -177,3 +197,4 @@ body {
     background: var(--cyber-pink);
     color: #fff;
 }
+
