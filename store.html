@@ -1,96 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASIT | Black Market Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="store-style.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Oxanium:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="store-style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container nav-wrapper">
-            <div class="logo">
-                <div class="logo-box">C</div>
-                <span class="logo-text">CASIT</span>
-            </div>
-
-            <div class="nav-icons-group">
-                    <a href="index.html" class="nav-icon-btn active-nav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                    </a>
-
-                    <a href="store.html" class="nav-icon-btn active-nav">                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-                    </a>
-
-                    <a href="wallet.html" class="nav-icon-btn active-nav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                    </a>
-                </div>
+      <div class="container nav-wrapper">
+        <div class="logo">
+          <div class="logo-box">C</div>
+          <span class="logo-text">CASIT</span>
         </div>
+
+        <div class="nav-icons-group">
+          <a href="index.html" class="nav-icon-btn active-nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </a>
+
+          <a href="store.html" class="nav-icon-btn active-nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </a>
+
+          <a href="wallet.html" class="nav-icon-btn active-nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="12" x2="12" y1="2" y2="22"></line>
+              <path
+                d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <main class="container store-container">
-        <section class="search-section">
-            <div class="search-box">
-                <div class="search-inner">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" id="productSearch" placeholder="SEARCH_DATABASE_FOR_ITEMS..." onkeyup="filterProducts()">
-                </div>
+      <section class="search-section">
+        <div class="search-box">
+          <div class="search-inner">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              id="productSearch"
+              placeholder="SEARCH_DATABASE_FOR_ITEMS..."
+              onkeyup="filterProducts()"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="store-content">
+        <div class="breadcrumb">STORE > ALL_MODULES</div>
+        <div class="product-grid" id="productGrid">
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Fighter Module" />
             </div>
-        </section>
-
-        <section class="store-content">
-            <div class="breadcrumb">STORE > ALL_MODULES</div>
-            
-            <div class="product-grid" id="productGrid">
-                <div class="p-card">
-                    <div class="p-img-placeholder">ITEM_REF_01</div>
-                    <div class="p-info">
-                        <h3>FIGHTER</h3>
-                        <p class="p-price">399RS</p>
-                        <button class="buy-btn"><a href="members.html">ACQUIRE</a></button>
-                    </div>
-                </div>
-
-                <div class="p-card">
-                    <div class="p-img-placeholder">ITEM_REF_02</div>
-                    <div class="p-info">
-                        <h3>KNIFE</h3>
-                        <p class="p-price">799RS</p>
-                        <button class="buy-btn"><a href="members.html">ACQUIRE</a></button>
-                    </div>
-                </div>
-
-                <div class="p-card">
-                    <div class="p-img-placeholder">ITEM_REF_03</div>
-                    <div class="p-info">
-                        <h3>SPIKE_RING</h3>
-                        <p class="p-price">59RS</p>
-                        <button class="buy-btn"><a href="members.html">ACQUIRE</a></button>
-                    </div>
-                </div>
+            <div class="p-info">
+              <h3>FIGHTER</h3>
+              <p class="p-price">399RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
             </div>
-        </section>
+          </div>
+
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Knife Module" />
+            </div>
+            <div class="p-info">
+              <h3>KNIFE</h3>
+              <p class="p-price">799RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Spike Ring" />
+            </div>
+            <div class="p-info">
+              <h3>SPIKE_RING</h3>
+              <p class="p-price">59RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Fighter Module" />
+            </div>
+            <div class="p-info">
+              <h3>FIGHTER</h3>
+              <p class="p-price">399RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Knife Module" />
+            </div>
+            <div class="p-info">
+              <h3>KNIFE</h3>
+              <p class="p-price">799RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-card">
+            <div class="p-img-placeholder">
+              <img src="img/sample.png" alt="Spike Ring" />
+            </div>
+            <div class="p-info">
+              <h3>SPIKE_RING</h3>
+              <p class="p-price">59RS</p>
+              <button class="buy-btn">
+                <a href="members.html">ACQUIRE</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
-        function filterProducts() {
-            let input = document.getElementById('productSearch').value.toUpperCase();
-            let grid = document.getElementById('productGrid');
-            let cards = grid.getElementsByClassName('p-card');
+      function filterProducts() {
+        let input = document
+          .getElementById("productSearch")
+          .value.toUpperCase();
+        let grid = document.getElementById("productGrid");
+        let cards = grid.getElementsByClassName("p-card");
 
-            for (let i = 0; i < cards.length; i++) {
-                let title = cards[i].getElementsByTagName('h3')[0];
-                if (title.innerText.toUpperCase().indexOf(input) > -1) {
-                    cards[i].style.display = "";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
+        for (let i = 0; i < cards.length; i++) {
+          let title = cards[i].getElementsByTagName("h3")[0];
+          if (title.innerText.toUpperCase().indexOf(input) > -1) {
+            cards[i].style.display = "";
+          } else {
+            cards[i].style.display = "none";
+          }
         }
+      }
     </script>
-</body>
+  </body>
 </html>
